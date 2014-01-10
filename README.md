@@ -1,0 +1,4 @@
+dimaco
+======
+
+proyecto para minimercado
