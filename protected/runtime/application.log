@@ -1,0 +1,44 @@
+2014/01/18 22:04:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tester".' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(270): CController->missingAction('tester')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('tester')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/tester')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/dimaco/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dimaco/index.php?r=site/tester
+HTTP_REFERER=http://localhost/dimaco/index.php
+---
+2014/01/18 22:04:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tester".' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(270): CController->missingAction('tester')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('tester')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/tester')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/dimaco/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dimaco/index.php?r=site/tester
+HTTP_REFERER=http://localhost/dimaco/index.php?r=cruge/ui/usermanagementadmin
+---
+2014/01/22 17:08:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tester".' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(270): CController->missingAction('tester')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('tester')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/tester')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/dimaco/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dimaco/index.php?r=site/tester
+HTTP_REFERER=http://localhost/dimaco/index.php?r=cruge/ui/usermanagementadmin
+---
+2014/01/22 17:32:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "tester" solicitada.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(270): CController->missingAction('tester')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('tester')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/tester')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/dimaco/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dimaco/index.php?r=site/tester
+HTTP_REFERER=http://localhost/dimaco/index.php?r=cruge/ui/usermanagementadmin
+---
