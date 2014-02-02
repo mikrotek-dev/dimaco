@@ -51,6 +51,7 @@
 				array('label'=>'Inicio', 'url'=>array('/site/index')),
 				array('label'=>'Acerca', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contactanos', 'url'=>array('/site/contact')),
+				array('label'=>'crear', 'url'=>array('/producto/create')),
 				array('label'=>'Lista de productos'
 					, 'url'=>array('/producto/index')
 					, 'visible'=>!Yii::app()->user->isGuest),
