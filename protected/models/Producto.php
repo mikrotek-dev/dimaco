@@ -7,6 +7,8 @@
  * @property integer $id_producto
  * @property string $nombre_producto
  * @property string $codigo_producto
+ * @property integer $cantidad_almacen_producto
+ * @property integer $cantidad_tienda_producto
  * @property string $stock_producto
  * @property string $precio_producto
  * @property integer $id_marca
@@ -36,11 +38,11 @@ class Producto extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('nombre_producto, codigo_producto', 'required'),
-			array('id_marca, id_pedido', 'numerical', 'integerOnly'=>true),
+			array('cantidad_almacen_producto, cantidad_tienda_producto, id_marca, id_pedido', 'numerical', 'integerOnly'=>true),
 			array('nombre_producto, codigo_producto, stock_producto, precio_producto', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_producto, nombre_producto, codigo_producto, stock_producto, precio_producto, id_marca, id_pedido', 'safe', 'on'=>'search'),
+			array('id_producto, nombre_producto, codigo_producto, cantidad_almacen_producto, cantidad_tienda_producto, stock_producto, precio_producto, id_marca, id_pedido', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -67,6 +69,8 @@ class Producto extends CActiveRecord
 			'id_producto' => 'Id Producto',
 			'nombre_producto' => 'Nombre Producto',
 			'codigo_producto' => 'Codigo Producto',
+			'cantidad_almacen_producto' => 'Cantidad Almacen Producto',
+			'cantidad_tienda_producto' => 'Cantidad Tienda Producto',
 			'stock_producto' => 'Stock Producto',
 			'precio_producto' => 'Precio Producto',
 			'id_marca' => 'Id Marca',
@@ -95,6 +99,8 @@ class Producto extends CActiveRecord
 		$criteria->compare('id_producto',$this->id_producto);
 		$criteria->compare('nombre_producto',$this->nombre_producto,true);
 		$criteria->compare('codigo_producto',$this->codigo_producto,true);
+		$criteria->compare('cantidad_almacen_producto',$this->cantidad_almacen_producto);
+		$criteria->compare('cantidad_tienda_producto',$this->cantidad_tienda_producto);
 		$criteria->compare('stock_producto',$this->stock_producto,true);
 		$criteria->compare('precio_producto',$this->precio_producto,true);
 		$criteria->compare('id_marca',$this->id_marca);

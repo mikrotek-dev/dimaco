@@ -24,6 +24,8 @@ $this->menu=array(
 		'id_producto',
 		'nombre_producto',
 		'codigo_producto',
+		'cantidad_almacen_producto',
+		'cantidad_tienda_producto',
 		'stock_producto',
 		'precio_producto',
 		'id_marca',

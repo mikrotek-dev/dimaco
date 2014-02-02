@@ -32,6 +32,18 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'cantidad_almacen_producto'); ?>
+		<?php echo $form->textField($model,'cantidad_almacen_producto'); ?>
+		<?php echo $form->error($model,'cantidad_almacen_producto'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'cantidad_tienda_producto'); ?>
+		<?php echo $form->textField($model,'cantidad_tienda_producto'); ?>
+		<?php echo $form->error($model,'cantidad_tienda_producto'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'stock_producto'); ?>
 		<?php echo $form->textField($model,'stock_producto',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'stock_producto'); ?>

@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Producto', 'url'=>array('create')),
-	array('label'=>'Manage Producto', 'url'=>array('admin')),
+	array('label'=>'Registro Producto', 'url'=>array('create')),
+	array('label'=>'Administracion Producto', 'url'=>array('admin')),
 );
 ?>
 
@@ -17,4 +17,9 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
+	// Brinda una opcion para ordenar la lista de nombres de producto(nombre_producto)
+	 'sortableAttributes'=>array(
+        'nombre_producto',
+    ),
+
 )); ?>

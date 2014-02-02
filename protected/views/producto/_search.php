@@ -27,6 +27,16 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->label($model,'cantidad_almacen_producto'); ?>
+		<?php echo $form->textField($model,'cantidad_almacen_producto'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'cantidad_tienda_producto'); ?>
+		<?php echo $form->textField($model,'cantidad_tienda_producto'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->label($model,'stock_producto'); ?>
 		<?php echo $form->textField($model,'stock_producto',array('size'=>45,'maxlength'=>45)); ?>
 	</div>

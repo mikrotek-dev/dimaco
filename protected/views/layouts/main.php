@@ -48,19 +48,19 @@
 			//
 			$this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Creador de usuarios aleatorios'
-					, 'url'=>array('/site/tester')
+				array('label'=>'Inicio', 'url'=>array('/site/index')),
+				array('label'=>'Acerca', 'url'=>array('/site/page', 'view'=>'about')),
+				array('label'=>'Contactanos', 'url'=>array('/site/contact')),
+				array('label'=>'Lista de productos'
+					, 'url'=>array('/producto/index')
 					, 'visible'=>!Yii::app()->user->isGuest),
-				array('label'=>'Administrar Usuarios 1'
+				array('label'=>'Administrar Usuarios'
 					, 'url'=>Yii::app()->user->ui->userManagementAdminUrl
 					, 'visible'=>!Yii::app()->user->isGuest),
-				array('label'=>'Login'
+				array('label'=>'Entrar'
 					, 'url'=>Yii::app()->user->ui->loginUrl
 					, 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')'
+				array('label'=>'Cerrar Session ->'.Yii::app()->user->name.'.'
 					, 'url'=>Yii::app()->user->ui->logoutUrl
 					, 'visible'=>!Yii::app()->user->isGuest),
 			),
@@ -77,7 +77,7 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+		Copyright &copy; <?php echo date('Y'); ?> Mikrotek Bolivia.<br/>
 		All Rights Reserved.<br/>
 		<?php echo Yii::powered(); ?>
 	</div><!-- footer -->
